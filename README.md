@@ -1,5 +1,5 @@
 # ImageJ_macros-phenotyping
-ImageJ macros for use with *Erysiphe necator* fungicide resistance efficacy assay
+ImageJ macros for use with *Erysiphe necator* fungicide efficacy assay
 
 Usage:
 1) Download this repository inside your working ImageJ directory.
