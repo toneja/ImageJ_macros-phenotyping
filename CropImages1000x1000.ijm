@@ -4,3 +4,4 @@ h = getHeight();
 w = getWidth();
 makeRectangle(w/2-size/2, h/2-size/2, size, size);
 run("Crop");
+saveAs("tif", getTitle());
