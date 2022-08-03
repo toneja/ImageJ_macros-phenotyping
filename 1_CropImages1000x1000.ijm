@@ -1,7 +1,5 @@
 // Crop image stack to 1000x1000 in center of image
-size=1000;
-h = getHeight();
-w = getWidth();
-makeRectangle(w/2-size/2, h/2-size/2, size, size);
+// All images are 3226x3024 so we can use hard-coded values
+makeRectangle(1113, 1012, 1000, 1000);
 run("Crop");
 saveAs("tif", getTitle());
