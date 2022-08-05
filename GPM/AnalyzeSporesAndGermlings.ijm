@@ -19,3 +19,6 @@ run("Set Measurements...", "area centroid perimeter fit shape feret's stack redi
 run("Analyze Particles...", "size=100-700 circularity=0.00-0.97 show=Overlay display exclude include add stack");
 roiManager("Show None");
 saveAs("Results", "GPM/results/Results_" + File.getNameWithoutExtension(getTitle()) + ".csv");
+
+// Close image window when finished
+close();
