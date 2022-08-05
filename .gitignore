@@ -2,7 +2,6 @@ jre/
 luts/
 macros/
 plugins/
-*.tif
 ij.jar
 ImageJ.cfg
 ImageJ.exe
