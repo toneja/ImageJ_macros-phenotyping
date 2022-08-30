@@ -21,4 +21,4 @@ roiManager("Show None");
 saveAs("Results", "GPM/results/Results_" + File.getNameWithoutExtension(getTitle()) + ".csv");
 
 // Close image window when finished
-close();
+// close();
