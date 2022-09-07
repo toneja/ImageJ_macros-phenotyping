@@ -12,6 +12,7 @@ setAutoThreshold("Default");
 setThreshold(0, 240);
 setOption("BlackBackground", false);
 run("Convert to Mask", "method=Default background=Light");
+run("Fill Holes", "stack");
 saveAs("tif", "GPM/images/" + getTitle());
 
 // Generate ROIs
