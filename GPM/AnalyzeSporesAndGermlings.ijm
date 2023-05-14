@@ -1,3 +1,11 @@
+// Open image stack from arguments if available
+var closeWindow = false;
+if (lengthOf(getArgument()) > 0) {
+	// Open the virtual stack of images
+	open(getArgument(), "virtual");
+	closeWindow = true;
+}
+
 // Crop image stack to 1500px diameter circle in center of image
 r = 750;
 x = (getWidth() / 2) - r;
@@ -24,5 +32,7 @@ run("Analyze Particles...", "size=100-600 circularity=0.00-0.97 show=Overlay dis
 roiManager("Show None");
 saveAs("Results", "GPM/results/Results_" + File.getNameWithoutExtension(getTitle()) + ".csv");
 
-// Close image window when finished
-// close();
+// Close ImageJ window when running in batches
+if (closeWindow) {
+	run("Quit");
+}
